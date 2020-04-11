@@ -1,0 +1,50 @@
+{
+    "responseId": "89198206-4c22-40b6-aa13-07b1e2d4c394-9aa0e9ed",
+    "queryResult": {
+        "queryText": "m",
+        "parameters": {
+            "hyperscaler": "GCP",
+            "vmname": "m"
+        },
+        "allRequiredParamsPresent": true,
+        "outputContexts": [
+            {
+                "name": "projects/dlp-test-262514/agent/sessions/a9fd0efb-b3bb-c885-6b19-6d23a17649ef/contexts/machinestatus-followup",
+                "lifespanCount": 2,
+                "parameters": {
+                    "hyperscaler": "GCP",
+                    "hyperscaler.original": "gcp",
+                    "vmname": "m",
+                    "vmname.original": "m"
+                }
+            },
+            {
+                "name": "projects/dlp-test-262514/agent/sessions/a9fd0efb-b3bb-c885-6b19-6d23a17649ef/contexts/__system_counters__",
+                "parameters": {
+                    "no-input": 0,
+                    "no-match": 0,
+                    "hyperscaler": "GCP",
+                    "hyperscaler.original": "gcp",
+                    "vmname": "m",
+                    "vmname.original": "m"
+                }
+            }
+        ],
+        "intent": {
+            "name": "projects/dlp-test-262514/agent/intents/984c794a-cdd1-4efa-9035-9f6b99c4dc94",
+            "displayName": "machine"
+        },
+        "intentDetectionConfidence": 0.01,
+        "languageCode": "en",
+        "sentimentAnalysisResult": {
+            "queryTextSentiment": {
+                "score": 0.1,
+                "magnitude": 0.1
+            }
+        }
+    },
+    "originalDetectIntentRequest": {
+        "payload": {}
+    },
+    "session": "projects/dlp-test-262514/agent/sessions/a9fd0efb-b3bb-c885-6b19-6d23a17649ef"
+}

@@ -1,0 +1,50 @@
+[
+	{
+		"id": "webhook",
+		"execute-command": "/home/vanlaak/webhook-service/service-config/action.sh",
+		"pass-arguments-to-command": [
+			{
+			"source": "payload",
+			"name": "queryResult.intent.displayName"
+		}],
+		"command-working-directory": "/home/vanlaak/webhook-service/service-config/",
+		"include-command-output-in-response": true,
+		"trigger-rule": 
+		{
+			"or":
+			[
+				{
+					"match": {
+						"type": "value",
+						"value": "webhook",
+						"parameter": {
+							"source": "payload",
+							"name": "queryResult.intent.displayName"
+						}
+					}
+				},
+				{
+					"match": {
+						"type": "value",
+						"value": "machine",
+						"parameter": {
+							"source": "payload",
+							"name": "queryResult.intent.displayName"
+						}
+					}
+				},
+				{
+					"match": {
+						"type": "value",
+						"value": "Apply",
+						"parameter": {
+							"source": "payload",
+							"name": "queryResult.intent.displayName"
+						}
+					}
+				}
+			]
+		}
+	}
+]
+
