@@ -1,13 +1,13 @@
 [
 	{
 		"id": "webhook",
-		"execute-command": "/home/vanlaak/webhook-service/service-config/action.sh",
+		"execute-command": "/app/service-config/action.sh",
 		"pass-arguments-to-command": [
 			{
 			"source": "payload",
 			"name": "queryResult.intent.displayName"
 		}],
-		"command-working-directory": "/home/vanlaak/webhook-service/service-config/",
+		"command-working-directory": "/app/service-config/",
 		"include-command-output-in-response": true,
 		"trigger-rule": 
 		{
